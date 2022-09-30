@@ -191,6 +191,10 @@ GEM
     decidim-comments (0.26.2)
       decidim-core (= 0.26.2)
       redcarpet (~> 3.5, >= 3.5.1)
+    decidim-consultations (0.26.2)
+      decidim-admin (= 0.26.2)
+      decidim-comments (= 0.26.2)
+      decidim-core (= 0.26.2)
     decidim-core (0.26.2)
       active_link_to (~> 1.0)
       acts_as_list (~> 0.9)
@@ -762,6 +766,7 @@ DEPENDENCIES
   brakeman
   byebug (~> 11.0)
   decidim (= 0.26.2)
+  decidim-consultations
   decidim-dev (= 0.26.2)
   faker (~> 2.14)
   letter_opener_web (~> 1.3)

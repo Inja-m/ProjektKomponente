@@ -19,6 +19,8 @@ gem "faker", "~> 2.14"
 
 gem "wicked_pdf", "~> 2.1"
 
+gem 'decidim-consultations'
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 

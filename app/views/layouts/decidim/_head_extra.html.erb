@@ -1,9 +1,16 @@
 <style type="text/css">
 .title-bar { background: var(--primary); }
+.topbar__search:not(:focus-within) button {
+    background: var(--primary);
+    color: white;
+}
 #term { background: #FFF;
         border-color: #3d393c;
         color: #3d393c;
-    }
+}
+.topbar__search{
+    margin: 1em;
+}
 ::placeholder { 
         color: #3d393c;;
       }

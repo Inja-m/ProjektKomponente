@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   mount Decidim::Core::Engine => '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
-  get "/fuerDich", to: "static#fuerDich"
+  get "/forYou", to: "static#forYou"
+
+  get "/projectIdea", to: "static#projectIdea"
+
+  get "/createdByYou", to: "static#createdByYou"
 
 end

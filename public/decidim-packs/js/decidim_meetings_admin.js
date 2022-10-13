@@ -903,7 +903,7 @@ $(function () {
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_html5sortable_dist_html5sortable_es_js","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-core-0_26_2_app_packs_src_decidim_editor_js","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-admin-0_26_2_app_packs_src_decidim_adm-6e50f3"], function() { return __webpack_require__("../.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/decidim-meetings-0.26.2/app/packs/entrypoints/decidim_meetings_admin.js"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_html5sortable_dist_html5sortable_es_js","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-core-0_26_2_app_packs_src_decidim_edit-032770","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-core-0_26_2_app_packs_src_decidim_editor_js","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-admin-0_26_2_app_packs_src_decidim_adm-6e50f3"], function() { return __webpack_require__("../.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/decidim-meetings-0.26.2/app/packs/entrypoints/decidim_meetings_admin.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

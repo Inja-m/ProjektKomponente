@@ -624,7 +624,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery-exposed_js","vendors-node_modules_bootstrap-tagsinput_dist_bootstrap-tagsinput_js-node_modules_core-js_mod-3996a4","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-core-0_26_2_app_packs_src_decidim_editor_js"], function() { return __webpack_require__("../.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/decidim-system-0.26.2/app/packs/entrypoints/decidim_system.js"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_jquery_dist_jquery-exposed_js","vendors-node_modules_bootstrap-tagsinput_dist_bootstrap-tagsinput_js-node_modules_core-js_mod-3996a4","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-core-0_26_2_app_packs_src_decidim_edit-032770","_rbenv_versions_2_7_5_lib_ruby_gems_2_7_0_gems_decidim-core-0_26_2_app_packs_src_decidim_editor_js"], function() { return __webpack_require__("../.rbenv/versions/2.7.5/lib/ruby/gems/2.7.0/gems/decidim-system-0.26.2/app/packs/entrypoints/decidim_system.js"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

@@ -2,7 +2,13 @@
 
 class StaticController < Decidim::ApplicationController
 
-    def fuerDich
+    def forYou
+    end
+
+    def projectIdea
+    end
+
+    def createdByYou
     end
 
 end

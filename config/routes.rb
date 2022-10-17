@@ -12,4 +12,6 @@ Rails.application.routes.draw do
 
   get "/createdByYou", to: "static#createdByYou"
 
+  root to: "decidim#assembly"
+
 end

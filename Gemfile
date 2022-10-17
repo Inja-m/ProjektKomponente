@@ -23,6 +23,9 @@ gem 'decidim-consultations'
 
 gem "decidim-decidim_awesome"
 
+gem "decidim-favorites", git:"https://github.com/mainio/decidim-module-favorites.git"
+
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 

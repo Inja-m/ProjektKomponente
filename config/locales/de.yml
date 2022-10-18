@@ -326,6 +326,8 @@ de:
       assemblies:
         show:
           title: Informationen zum Projekt
+          title_event: Veranstaltungen
+          title_team: Erfahre mehr über das Team
       assembly_members:
         index:
           members: Mitglieder

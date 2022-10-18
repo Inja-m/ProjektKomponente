@@ -21,5 +21,13 @@ module ProjektKomponente
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
+
+    initializer "decidim_assemblies_controller_extensions.rb" do
+      # Devise controller overrides to add some extra functionality into them.
+      # Currently this is only for debugging purposes.
+      ActiveSupport.on_load(:action_controller) do
+        include DecidimAssembliesControllerExtensions
+      end
+    end
   end
 end

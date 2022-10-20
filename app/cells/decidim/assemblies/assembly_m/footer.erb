@@ -6,13 +6,17 @@
         <div><%= t("assemblies.show.assembly_type", scope: "decidim") %></div>
         <div class="text-ellipsis"><strong><%= assembly_type %></strong></div>
       </div>
-    <% end %>
-    -->
+    <% end %>  
+    
     <%= link_to(
       t(model.cta_button_text_key, scope: "layouts.decidim.assemblies.assembly"),
       resource_path,
       class: "card__button button button--sc small"
     ) %>
+  -->
+
+    <%= send("follow_status") %>
+
     <% if has_link_to_resource? %>
       <%= link_to t("layouts.decidim.assemblies.assembly.view"), resource_path, class: "card__button button hollow primary" %>
     <% end %>

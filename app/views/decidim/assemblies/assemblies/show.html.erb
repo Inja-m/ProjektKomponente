@@ -15,6 +15,8 @@ edit_link(
 )
 %>
 
+<%= render partial: "layouts/decidim/assembly_header" %>
+
 <%= participatory_space_floating_help %>
 
 <% if current_participatory_space.private_space? %>
@@ -24,7 +26,7 @@ edit_link(
 
 <%= cell("decidim/announcement", current_participatory_space.announcement) %>
 
-<%= render partial: "decidim/shared/share_modal" %>
+<%# teilen entfernen <%= render partial: "decidim/shared/share_modal" %>
 
 <div class="row column">
   <% if current_participatory_space.parent.present? %>
@@ -138,7 +140,8 @@ edit_link(
     </div>
 
     <div class="section columns medium-5 mediumlarge-4 large-3">
-     
+    <% if false %>
+    Immer Falsch zum auskommentieren... Entfernen bspw. Assembly Type Montageart
       <div class="card extra definition-data">
         <% if translated_attribute(current_participatory_space.meta_scope).present? %>
           <div class="definition-data__item scope">
@@ -238,7 +241,7 @@ edit_link(
 
         <%= social_handler_links(current_participatory_space) %>
       </div>
-     
+    <% end %> 
     </div>
 
   </div>

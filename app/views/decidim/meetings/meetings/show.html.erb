@@ -15,24 +15,27 @@ edit_link(
 )
 %>
 
-
 <div class="row column view-header">
+
+<nav aria-label="You are here:" role="navigation">
+  <ul class="breadcrumbs">
+   
+    <li><%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space) %></li>
+    <li><%= link_to t(".back"), meetings_path %></li>
+    <li><%= present(meeting).title(links: true, html_escape: true ) %></li>
+  </ul>
+</nav>
+
+<% if false %>
   <h1 class="heading2">
     <%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space), class: "heading2" %>
   </h1> 
+<% end %>
 
-  <div class="m-bottom">
 
-    <%= link_to meetings_path, class: "small hollow js-back-to-list" do %>
-      <%= icon "chevron-left", class: "icon--small", role: "img", "aria-hidden": true %>
-      <%= t(".back") %>
-    <% end %>
-  </div>
+  <h1 class="heading2"><%= present(meeting).title(links: true, html_escape: true ) %></h1>
 
-  <h2 class="heading2"><%= present(meeting).title(links: true, html_escape: true ) %></h2>
-
-  <%= cell "decidim/author", author_presenter_for(meeting.normalized_author), has_actions: true, from: meeting, context: { extra_classes: ["author-data--small"] } %>
-
+ 
 </div>
 <div class="row">
   <div class="columns section view-side mediumlarge-4 mediumlarge-push-8
@@ -106,12 +109,13 @@ edit_link(
         <% end %>
       </div>
     <% end %>
-
+    <% if false %>
     <%= resource_reference(meeting) %>
     <%= resource_version(meeting, versions_path: meeting_versions_path(meeting)) %>
     <%= render partial: "decidim/shared/share_modal" %>
     <%= embed_modal_for meeting_widget_url(meeting, format: :js) %>
     <%= render partial: "calendar_modal", locals: { ics_url: calendar_meeting_url(meeting), google_url: google_calendar_event_url(meeting) } %>
+    <% end %>
   </div>
   <div class="columns mediumlarge-8 mediumlarge-pull-4">
     <div class="section">
@@ -130,17 +134,24 @@ edit_link(
           <%= t("withdraw", scope: "decidim.meetings.types") %>
         </span>
       <% end %>
-      <%= render_meeting_body(@meeting) %>
-
+     
       <% if meeting.maps_enabled? && !meeting.online_meeting? %>
         <%= render partial: "decidim/shared/static_map", locals: { icon_name: "meetings", geolocalizable: meeting } %>
       <% end %>
+      <%= cell "decidim/author", author_presenter_for(meeting.normalized_author), has_actions: false, from: meeting, context: { extra_classes: ["author-data--small"] } %>
+
 
       <% unless meeting.in_person_meeting? || meeting.withdrawn? %>
         <%= cell "decidim/meetings/online_meeting_link", meeting %>
       <% end %>
 
       <%= render partial: "decidim/shared/tags", locals: { resource: meeting, tags_class_extra: "tags--meeting" } %>
+        
+    
+      <div class="text">
+        <%= render_meeting_body(@meeting) %>
+      </div>
+
     </div>
 
     <% if meeting.agenda.present? && meeting.agenda.visible? %>
@@ -176,8 +187,11 @@ edit_link(
     <%= linked_resources_for meeting, :results, "meetings_through_proposals" %>
   </div>
 </div>
+<% if false %>
 <%= attachments_for meeting %>
 <%= comments_for meeting %>
 <%= pad_iframe_for meeting %>
 
 <%= cell("decidim/flag_modal", meeting) %>
+
+<% end %>

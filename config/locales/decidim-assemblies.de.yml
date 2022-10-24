@@ -184,7 +184,7 @@ de:
           name: Mitglied
           positions:
             other: Andere
-            president: Präsident
+            president: Projektleitung
             secretary: Sekretär
             vice_president: Vizepräsident
         assembly_user_role:
@@ -368,7 +368,7 @@ de:
         assembly:
           more_info: Mehr Informationen
           take_part: Teilnehmen
-          view: ansehen
+          view: anzeigen
         index:
           organizational_chart: Organigramm
           promoted_assemblies: Hervorgehobene Gremien

@@ -14,11 +14,12 @@
       class: "card__button button button--sc small"
     ) %>
   -->
-
+    
     <%= send("follow_status") %>
 
+  
     <% if has_link_to_resource? %>
-      <%= link_to t("layouts.decidim.assemblies.assembly.view"), resource_path, class: "card__button button hollow primary" %>
+      <%= link_to t("layouts.decidim.assemblies.assembly.view"), resource_path, class: "card__button button--sc light button small" %>
     <% end %>
   </div>
 </div>

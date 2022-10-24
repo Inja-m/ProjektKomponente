@@ -779,6 +779,7 @@ DEPENDENCIES
   brakeman
   byebug (~> 11.0)
   decidim (= 0.26.2)
+  decidim-accountability
   decidim-consultations
   decidim-decidim_awesome
   decidim-dev (= 0.26.2)

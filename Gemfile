@@ -23,6 +23,8 @@ gem 'decidim-consultations'
 
 gem "decidim-decidim_awesome"
 
+gem "decidim-accountability"
+
 gem "decidim-favorites", git:"https://github.com/mainio/decidim-module-favorites.git"
 
 

@@ -2,6 +2,49 @@
 .wrapper{
     padding: 0em;
 }
+.card{
+    margin: 1.5rem;
+}
+
+.card__content{
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.extra{
+    margin:0 ;
+    border: 0;
+    background: transparent;
+}
+.button{
+    margin: 0;
+}
+
+.button.secondary.hollow.active{
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #fff;
+    border-right: 1px solid white;
+}
+.button.secondary.hollow{
+    color:  #611E22;
+    background: #ECDFE0;
+    border-color: #ECDFE0;
+}
+.button--icon.hollow.secondary .icon-wrap, .button--icon.secondary.meeting-polls__button .icon-wrap{
+    border-right: 0px solid;
+}
+.button.secondary.hollow:hover,  .button.secondary.hollow:focus{
+    color:  #611E22;
+    background: #ECDFE0;
+    border-color: #ECDFE0;
+
+}
+.button.expanded{
+    margin: 0;
+}
+.filters-controls {
+    margin: 1.5em;
+}
 
 .title-bar { background: var(--primary); }
 .topbar__search:not(:focus-within) button {
@@ -16,7 +59,7 @@
     margin: 1em;
 }
 ::placeholder { 
-        color: #3d393c;;
+        color: #3d393c;
       }
 
 .main-nav__link a{
@@ -57,14 +100,18 @@
 .heading2{
     color: #3d393c;
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 .accordion{
-    background: #fafafa;
+    background: #fff;
+    border-radius: 20px;
+    
 }
 
 .accordion-item{
-    padding: 10px 0px;
+    padding: 1rem;
+
 }
 
 .accordion-title{

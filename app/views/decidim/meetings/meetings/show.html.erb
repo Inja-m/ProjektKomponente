@@ -15,8 +15,14 @@ edit_link(
 )
 %>
 
+
 <div class="row column view-header">
+  <h1 class="heading2">
+    <%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space), class: "heading2" %>
+  </h1> 
+
   <div class="m-bottom">
+
     <%= link_to meetings_path, class: "small hollow js-back-to-list" do %>
       <%= icon "chevron-left", class: "icon--small", role: "img", "aria-hidden": true %>
       <%= t(".back") %>

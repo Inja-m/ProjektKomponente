@@ -38,9 +38,15 @@ edit_link(
     </div>
   <% end %>
   <div class="row">
+
+  
   
     <div class="columns medium-7 mediumlarge-8">
-
+    <div class="card extra">
+      <div class="card__content">
+        <%= render partial: "decidim/shared/follow_button", locals: { followable: current_participatory_space, large: false  } %>
+      </div>
+    </div>
       <ul class="accordion" data-allow-all-closed="true" data-accordion data-multi-expand="true">
         <li class="accordion-item" data-accordion-item>
           <!-- Accordion tab title -->
@@ -149,7 +155,7 @@ edit_link(
             <%= translated_attribute(current_participatory_space.meta_scope) %>
           </div>
         <% end %>
-
+        
         <% if translated_attribute(current_participatory_space.developer_group).present? %>
           <div class="definition-data__item developer-group">
             <span class="definition-data__title"><%= t("developer_group", scope: "decidim.assemblies.show") %></span>

@@ -78,8 +78,8 @@ en:
   activerecord:
     models:
       decidim/assembly:
-        one: Assembly
-        other: Assemblies
+        one: Project
+        other: Projects
       decidim/assembly_member:
         one: Assembly member
         other: Assembly members
@@ -187,7 +187,7 @@ en:
         decidim_assemblies_type_id_eq:
           label: Assembly type
       menu:
-        assemblies: Assemblies
+        assemblies: Projects
         assemblies_settings: Settings
         assemblies_submenu:
           assembly_admins: Assembly admins
@@ -213,7 +213,7 @@ en:
             promoted: Highlighted
             published: Published
             title: Title
-          name: Assembly
+          name: Project
         assembly_member:
           fields:
             ceased_date: Ceased date
@@ -238,8 +238,8 @@ en:
             moderator: Moderator
             valuator: Valuator
       titles:
-        assemblies: Assemblies
-        assemblies_types: Assemblies types
+        assemblies: Projects
+        assemblies_types: Projects types
     admin_log:
       assembly:
         create: "%{user_name} created the %{resource_name} assembly"
@@ -355,7 +355,7 @@ en:
         participatory: Participatory
         working_group: Working group
       index:
-        title: Assemblies
+        title: Projects
       last_activity:
         new_assembly: New assembly
       pages:
@@ -370,7 +370,7 @@ en:
       show:
         area: Area
         assembly_type: Assembly type
-        children: Assemblies
+        children: Projects
         closing_date: Closing date
         composition: Composition
         created_by: Created by
@@ -426,17 +426,17 @@ en:
         assembly_type_presenter:
           not_found: 'The assembly type was not found on the database (ID: %{id})'
     menu:
-      assemblies: Assemblies
+      assemblies: Projects
     metrics:
       assemblies:
         description: Number of assemblies created
         object: assemblies
-        title: Assemblies
+        title: Projects
     participatory_processes:
       show:
         related_assemblies: Related assemblies
     statistics:
-      assemblies_count: Assemblies
+      assemblies_count: Projects
   errors:
     messages:
       cannot_be_blank: can not be blank

@@ -1,8 +1,9 @@
 <div class="card__footer">
   <div class="card__support">
     <%= send("follow_status") %>
-    
+    <% if false %>
     <%= send("test") %>
+    <% end %>
     <% if can_join? && show_footer_actions? %>
       <%= cell "decidim/meetings/join_meeting_button", model %>
     <% else %>

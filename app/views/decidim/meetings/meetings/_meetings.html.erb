@@ -40,6 +40,7 @@
 </div>
 <%= decidim_paginate meetings, order_start_time: params[:order_start_time], scope_id: params[:scope_id] %>
 
+<% if false %>
 <div class="row">
   <div class="text-right">
     <% if params.dig("filter", "with_availability").present? && params["filter"]["with_availability"] == "withdrawn" %>
@@ -49,3 +50,4 @@
     <% end %>
   </div>
 </div>
+<% end %>

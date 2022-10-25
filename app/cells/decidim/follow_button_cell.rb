@@ -24,7 +24,7 @@ module Decidim
     end
 
     def button_classes
-      return "card__button secondary text-uppercase follow-button mb-none has-tip" if inline?
+      return "card__button secondary text-uppercase follow-button mb-none has-tip button--sc" if inline?
 
       extra_classes = ""
       extra_classes += " active" if current_user_follows?
@@ -34,7 +34,7 @@ module Decidim
                          " small"
                        end
 
-      "button expanded button--icon follow-button secondary hollow #{extra_classes}"
+      "button expanded button--icon follow-button secondary hollow button--sc light  #{extra_classes}"
     end
 
     def icon_options

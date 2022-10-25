@@ -16,24 +16,23 @@ edit_link(
 %>
 
 <div class="row column view-header">
-
+<% if false %>
 <nav aria-label="You are here:" role="navigation">
-  <ul class="breadcrumbs">
-   
+  <ul class="breadcrumbs text">
     <li><%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space) %></li>
     <li><%= link_to t(".back"), meetings_path %></li>
     <li><%= present(meeting).title(links: true, html_escape: true ) %></li>
   </ul>
 </nav>
-
-<% if false %>
-  <h1 class="heading2">
-    <%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space), class: "heading2" %>
-  </h1> 
 <% end %>
 
 
-  <h1 class="heading2"><%= present(meeting).title(links: true, html_escape: true ) %></h1>
+  <h1 class="heading2 text">
+    <%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space), class: "heading2" %>
+  </h1> 
+
+
+  <h1 class="heading2 text"><%= present(meeting).title(links: true, html_escape: true ) %></h1>
 
  
 </div>
@@ -151,6 +150,7 @@ edit_link(
       <div class="text">
         <%= render_meeting_body(@meeting) %>
       </div>
+  
 
     </div>
 
@@ -195,3 +195,7 @@ edit_link(
 <%= cell("decidim/flag_modal", meeting) %>
 
 <% end %>
+
+<div class="button-group">
+  <%= link_to t(".event"), meetings_path, class:"button button--sc hollow button--right" %>
+</div>

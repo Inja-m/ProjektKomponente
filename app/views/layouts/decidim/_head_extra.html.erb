@@ -6,7 +6,16 @@
     margin-bottom: 0rem;
 }
 .text{
-    margin: 0rem 1.5rem 1.5rem 1.5rem;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+}
+.button-group{
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 1.5rem;
 }
 
 .card{
@@ -24,13 +33,15 @@
 }
 .button{
     margin: 0;
+    color:white;
 }
 
-.button.secondary.hollow.active{
+.button.secondary.hollow.active, .card__button{
     border-color: var(--primary);
     background-color: var(--primary);
     color: #fff;
     border-right: 1px solid white;
+    
 }
 .button.secondary.hollow{
     color:  #611E22;
@@ -46,9 +57,7 @@
     border-color: #ECDFE0;
 
 }
-.button.expanded{
-    margin: 0;
-}
+
 .filters-controls {
     margin: 1.5em;
 }
@@ -164,6 +173,9 @@
     height: 2rem;
     fill: currentColor;
 }
+.address__info{
+    margin-bottom: 0.75rem;
+}
 .author__avatar img{
     width: 2rem;
     height: 2rem;
@@ -177,7 +189,10 @@
 .breadcrumbs li:not(:last-child)::after {
     margin: 0 0.5rem;
 }
-
+.card.middle{
+    display: block;
+    margin-bottom: 10rem;
+}
 
 
 </style>

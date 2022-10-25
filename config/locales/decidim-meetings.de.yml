@@ -125,8 +125,8 @@ de:
             maps_enabled: Karten aktiviert
             registration_code_enabled: Registrierungscode aktiviert
             resources_permissions_enabled: Aktionsberechtigungen können für jedes Meeting festgelegt werden
-            scope_id: Bereich
-            scopes_enabled: Bereiche aktiviert
+            scope_id: Thema
+            scopes_enabled: Themen aktiviert
             terms_and_conditions_url_for_meeting_creators: Nutzungsbedingungen URL für Meeting-Ersteller
           step:
             announcement: Ankündigung
@@ -497,6 +497,8 @@ de:
           select_a_meeting_type: Bitte eine Meeting-Art auswählen
           select_a_registration_type: Bitte wählen Sie eine Registrierungsart aus
         index:
+          event: Veranstaltung
+          back: zurück zum Projekt
           click_here: Alle Treffen anzeigen
           new_meeting: Neue Besprechung
           see_all: Alle Treffen anzeigen
@@ -515,7 +517,8 @@ de:
           confirm: Bestätigen
         show:
           attendees: Teilnehmer zählen
-          back: Veranstaltungen
+          event: Weitere
+          back: Zurück zum Projekt
           close_meeting: Meeting beenden
           contributions: Beiträge zählen
           date: Datum

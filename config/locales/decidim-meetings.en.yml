@@ -516,8 +516,8 @@ en:
           event: Event
           back: back to the Project
           click_here: See all meetings
-          new_meeting: New meeting
-          see_all: See all meetings
+          new_meeting: New event
+          see_all: See all events
           see_all_withdrawn: See all withdrawn meetings
           text_banner: You are viewing the list of meetings withdrawn by their authors. %{go_back_link}.
         meeting_minutes:

@@ -44,11 +44,14 @@
   -->
 
     <% if allowed_to?(:create, :meeting) %>
+    <div class="text">
       <%= action_authorized_link_to :create, new_meeting_path, class: "title-action__action button small", data: { "redirect_url" => new_meeting_path } do %>
         <%= t("new_meeting", scope: "decidim.meetings.meetings.index") %>
         <%= icon "plus", role: "img", "aria-hidden": true %>
       <% end %>
+    </div>
     <% end %>
+    
   </div>
 
 </div>

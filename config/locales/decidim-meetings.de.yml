@@ -500,8 +500,8 @@ de:
           event: Veranstaltung
           back: zurück zum Projekt
           click_here: Alle Treffen anzeigen
-          new_meeting: Neue Besprechung
-          see_all: Alle Treffen anzeigen
+          new_meeting: Neue Veranstaltung
+          see_all: Alle Veranstaltungen anzeigen
           see_all_withdrawn: Alle zurückgezogenen Treffen ansehen
         meeting_minutes:
           related_information: Zugehörige Informationen
@@ -517,7 +517,7 @@ de:
           confirm: Bestätigen
         show:
           attendees: Teilnehmer zählen
-          event: Weitere
+          event: Weitere Veranstaltungen
           back: Zurück zum Projekt
           close_meeting: Meeting beenden
           contributions: Beiträge zählen

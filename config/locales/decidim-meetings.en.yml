@@ -526,7 +526,7 @@ en:
           no_meetings_warning: No meetings match your search criteria or there isn't any meeting scheduled.
           upcoming_meetings_warning: Currently, there are no scheduled meetings, but here you can find all the past meetings listed.
         new:
-          back: Back
+          back: Cancel
           create: Create
           title: Create Your Meeting
         registration_confirm:
@@ -556,9 +556,10 @@ en:
           registration_state:
             validated: VALIDATED
             validation_pending: VALIDATION PENDING
-          remaining_slots:
-            one: "%{count} slot remaining"
-            other: "%{count} slots remaining"
+          remaining_slots: "%{count} of %{total} are occupied"
+          partticipant: 
+            one: "%{count} Participant"
+            other: "%{count} Participants"
           view: View
           visit_finished: View past meeting
           withdraw_btn_hint: You can withdraw your meeting if you change your mind. The meeting is not deleted, it will appear in the list of withdrawn meetings.
@@ -655,7 +656,7 @@ en:
     participatory_spaces:
       highlighted_meetings:
         past_meetings: Past meetings
-        see_all: See all meetings (%{count})
+        see_all: See all meetings
         upcoming_meetings: Upcoming meetings
       upcoming_meeting_for_card:
         upcoming_meeting: Upcoming meeting

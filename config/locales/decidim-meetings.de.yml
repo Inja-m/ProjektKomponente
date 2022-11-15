@@ -509,7 +509,7 @@ de:
           no_meetings_warning: Keine Besprechung entspricht Ihren Suchkriterien oder es ist keine Besprechung geplant.
           upcoming_meetings_warning: Momentan gibt es keine geplanten Besprechungen, aber hier finden Sie alle aufgelisteten Besprechungen.
         new:
-          back: Zurück
+          back: Abbrechen
           create: Erstellen
           title: Ihre Besprechung erstellen
         registration_confirm:
@@ -537,9 +537,10 @@ de:
           registration_state:
             validated: GÜLTIG
             validation_pending: Validierung ausstehend
-          remaining_slots:
-            one: "%{count} Slot bleibt übrig"
-            other: "Noch %{count} Slots"
+          remaining_slots: "%{count} von %{total} sind belegt"
+          partticipant: 
+            one: "%{count} Teilnehmende:r"
+            other: "%{count} Teilnehmende"
           view: Anzeigen
           visit_finished: Vergangene Treffen anzeigen
           withdraw_btn_hint: Sie können Ihr Treffen zurückziehen, wenn Sie Ihre Meinung ändern. Das Meeting wird nicht gelöscht, es wird in der Liste der zurückgezogenen Meetings angezeigt.
@@ -631,7 +632,7 @@ de:
     participatory_spaces:
       highlighted_meetings:
         past_meetings: Vergangene Treffen
-        see_all: Alle anzeigen (%{count})
+        see_all: Alle anzeigen
         upcoming_meetings: Bevorstehende Treffen
       upcoming_meeting_for_card:
         upcoming_meeting: Kommendes Treffen

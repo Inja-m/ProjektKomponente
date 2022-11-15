@@ -19277,4 +19277,36 @@ label + .meeting-polls__answer + label {
   margin-bottom: 0;
 }
 
+.favorite-button {
+  position: relative;
+  top: 4px;
+}
+.favorite-button.button, .favorite-button.meeting-polls__button {
+  padding: 0;
+}
+.favorite-button .icon-wrap {
+  position: relative;
+  border: 0;
+  padding: 0;
+}
+.favorite-button .icon-wrap .heart-icon {
+  color: #fa6c96;
+}
+.favorite-button .icon-wrap .heart-icon svg {
+  fill: currentColor;
+}
+.favorite-button .indicator-wrap {
+  position: absolute;
+  bottom: 0;
+  right: -8px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fa6c96;
+  line-height: 24px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background: #fff;
+  color: #fa6c96;
+}
+
 /*# sourceMappingURL=decidim_core.css.map*/

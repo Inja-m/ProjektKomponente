@@ -1,0 +1,39 @@
+<div class="row">
+
+  <% if false %>
+  <div class="columns large-3">
+    <%= link_to :back do %>
+      <%= icon "chevron-left", class: "icon--small", role: "img", "aria-hidden": true %>
+      <%= t(".back") %>
+    <% end %>
+  </div>
+  <% end %>
+
+
+  <div class="columns large-6">
+
+    <h1 class="heading2 text">
+      <%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space), class: "heading2" %>
+    </h1> 
+
+    <h2 class="text"><%= t(".title") %></h2>
+    <div class="card">
+      <div class="card__content">
+        <%= decidim_form_for(@form, html: { class: "meetings_form new_meeting" }) do |f| %>
+          <%= render partial: "form", object: f %>
+
+          <div class="actions">
+            <%= f.submit t(".create"), class: "button expanded", data: { disable: true } %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="button-group">
+  <%= link_to t(".back"), meetings_path, class:"button button--sc hollow button--right" %>
+</div>
+
+  </div>
+
+  <div class="columns large-3"></div>
+</div>

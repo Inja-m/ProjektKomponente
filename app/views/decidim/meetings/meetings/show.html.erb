@@ -29,10 +29,12 @@ edit_link(
 
   <h1 class="heading2 text">
     <%= link_to translated_attribute(current_participatory_space.title), decidim_assemblies.assembly_path(current_participatory_space), class: "heading2" %>
-  </h1> 
+    •
+    <%= present(meeting).title(links: true, html_escape: true ) %>
+   </h1> 
 
 
-  <h1 class="heading2 text"><%= present(meeting).title(links: true, html_escape: true ) %></h1>
+ 
 
  
 </div>
@@ -147,7 +149,7 @@ edit_link(
       <%= render partial: "decidim/shared/tags", locals: { resource: meeting, tags_class_extra: "tags--meeting" } %>
         
     
-      <div class="text">
+      <div class="text2">
         <%= render_meeting_body(@meeting) %>
       </div>
   

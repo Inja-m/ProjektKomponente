@@ -19,13 +19,13 @@ module ProjektKomponente
     config.load_defaults 6.0
 
 
+
     initializer "decidim_assemblies_controller_extensions.rb" do
+      # Devise controller overrides to add some extra functionality into them.
+      # Currently this is only for debugging purposes.
       ActiveSupport.on_load(:action_controller) do
         include DecidimAssembliesControllerExtensions
       end
     end
-
-
-
   end
 end

@@ -4,6 +4,15 @@ Free Open-Source participatory democracy, citizen participation and open governm
 
 This is the open-source repository for Projekt_Komponente, based on [Decidim](https://github.com/decidim/decidim).
 
+## Setting up the Database
+
+bin/rails db:create db:migrate db:seed
+
+## Start the application
+
+1. Start the Database (sudo service postgresql start)
+2. Start the component (bin/rails s)
+
 ## Setting up the application
 
 You will need to do some steps before having the app working properly once you've deployed it:
